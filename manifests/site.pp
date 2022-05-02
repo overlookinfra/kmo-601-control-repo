@@ -18,4 +18,5 @@ node default {
   }
   else {
       include role::beta
+  }
 }

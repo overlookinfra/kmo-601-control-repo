@@ -9,4 +9,8 @@
 # profile/manifests/base.pp
 class profile::base ($login_message){
   class {'motd':content => $login_message,}
+  
+  file {'/etc/old.config':
+    content => 'this is a new config file'
+  }
 }

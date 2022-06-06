@@ -15,12 +15,19 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
+# the internal lab reference for the nginx module location
+mod 'nginx',
+  git: 'git@gitea:puppet/nginx.git',
+  branch: 'production'
 
 # Magic goes here
 mod 'puppetlabs-motd', '6.1.0'
-mod 'puppetlabs-registry', '4.0.1'
 mod 'puppetlabs-stdlib', '8.1.0'
 mod 'puppetlabs-apache', '7.0.0' # Fixes nixagent1 module dependency
 mod 'puppetlabs-iis', '8.0.3'    # Fixes winagent module dependency
 mod 'puppetlabs-concat', '7.1.1'   # Fixes nixagent1 module dependency
-mod 'puppetlabs-pwshlib', '0.10.0' # Fixes winagent module dependency
+mod 'puppetlabs-pwshlib', '0.10.1' # Fixes winagent module dependency
+mod 'puppetlabs/powershell', '5.0.0'
+mod 'puppetlabs/chocolatey', '6.2.0'
+mod 'puppetlabs/registry', '4.0.1'
+mod 'puppetlabs/ruby_task_helper', '0.6.1'

@@ -8,5 +8,5 @@
 #   include role::appserver
 class role::appserver {
   include profile::base
-  include nginx
+  include profile::nginx
 }
